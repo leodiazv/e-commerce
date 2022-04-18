@@ -1,0 +1,139 @@
+.cart-modal {
+    position: fixed;
+    top: 59px;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    box-shadow: 2px 2px 9px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    transition: 1s;
+    transform: translateX(300px);
+    background-color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    color: #515151;
+    height: 100%;
+    
+    overflow: hidden;
+    
+}
+
+.is-open {
+    transform: translateX(0px);
+}
+
+.cart-modal h3{
+    width: 100%;
+    font-size: 21px;
+}
+
+.cart-modal ul{
+    width: 100%;
+    overflow-y: scroll;
+    overflow: hidden;
+}
+
+.cart-modal .cart-item{
+    list-style: none;
+    margin-bottom: 50px;
+    position: relative;
+    
+}
+
+.cart-modal .cart-item h4 {
+    font-size: 14px;
+    color: #c7c7c7;
+    font-weight: 500;
+    
+}
+
+.cart-modal .cart-item button .material-icons-outlined {
+    color: #f85555;
+    font-weight: lighter;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+}
+
+.cart-modal .cart-item a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #515151;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.cart-modal .cart-item input {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    border-color: #c7c7c7;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cart-modal .cart-item .total-price {
+    color: #c7c7c7;
+    font-weight: 400;
+    text-align: right;
+    
+}
+
+
+.cart-modal .cart-item .total-price strong {
+    padding-left: 20px;
+    color: #000;
+    
+
+}
+
+.cart-modal .checkout-container{
+    position: sticky;
+    bottom: 45px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #c7c7c7;
+    color: #000;
+    background-color: #fff;
+}
+
+.cart-modal .checkout-container div{
+    
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #515151;
+}
+
+.cart-modal .checkout-container p{
+    padding: 0;
+    color: #c7c7c7;
+    font-weight: 400;
+}
+
+.cart-modal .checkout-container button{
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    background-color: #f85555;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}

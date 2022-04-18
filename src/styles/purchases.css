@@ -1,0 +1,85 @@
+.purchases-container{
+    box-sizing: border-box;
+    color: #515151;
+    padding: 13px 20px;
+    
+}
+
+.purchases-container h1{
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.purchases-container .purchase{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: solid;
+    margin-bottom: 20px;
+    border-color: #c7c7c7;
+    border-width: 1px;
+    
+}
+
+.purchases-container .purchase h3{
+    
+    text-align: left;
+    padding: 10px;
+    border-bottom-color: #c7c7c7;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+}
+
+.purchases-container .purchase ul{
+    box-sizing: border-box;
+    list-style: none;
+    padding: 15px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.purchases-container .purchase ul a{
+    width: 100%;
+    text-decoration: none;
+    color: #515151;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.purchases-container .purchase ul a li{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: 0px 0px 20px;
+    
+
+}
+
+.purchases-container .purchase ul a li p{
+    box-sizing: border-box;
+    width: 50%;
+    
+    font-size: 13px;
+    text-align: left;
+    
+}
+
+.purchases-container .purchase ul a li .quantity{
+    box-sizing: border-box;
+    border: 1px solid #c7c7c7;
+    width: 40px;
+    height: 25px;
+    
+
+}
+
+.purchases-container .purchase ul a li .price{
+    width: 50px;
+}
+
