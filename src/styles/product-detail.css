@@ -158,3 +158,35 @@
     
     
 }
+
+@media (min-width: 1280px) {
+
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product-container img{
+        
+        width: 45%;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        
+    }
+    
+    .product-container .product-options {
+        
+       width: 45%;
+       
+    }
+
+    .product-container .add-cart-button{
+
+        width: 45%;
+     }
+
+     
+  }

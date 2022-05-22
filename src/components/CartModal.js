@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { deleteCartItemThunk, purchaseThunk } from "../redux/actions";
+import {
+  deleteCartItemThunk,
+  purchaseThunk,
+  setIsCartOpen,
+  setUserCart,
+} from "../redux/actions";
 import "../styles/cart-modal.css";
 
 const CartModal = ({ isCartOpen }) => {
@@ -17,6 +22,12 @@ const CartModal = ({ isCartOpen }) => {
     }
 
     return lastPrice;
+  };
+
+  const checkout = () => {
+    dispatch(purchaseThunk());
+    dispatch(setUserCart([]));
+    dispatch(setIsCartOpen(false));
   };
 
   return (
@@ -55,7 +66,7 @@ const CartModal = ({ isCartOpen }) => {
           <p>Total </p>
           {`$ ${addPrices()}`}
         </div>
-        <button onClick={() => dispatch(purchaseThunk())}>Checkout</button>
+        <button onClick={() => checkout()}>Checkout</button>
       </div>
     </div>
   );

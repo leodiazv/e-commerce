@@ -11,7 +11,7 @@ nav {
 
 nav h2 {
     color: #f85555;
-    padding: 14px 20px;
+    padding: 20px 20px;
     font-size: 24px;
 }
 
@@ -133,4 +133,20 @@ nav button {
     font-size: 16px;
     margin: 20px 0px;
 
+}
+
+@media (min-width: 1280px) {
+    
+    nav {
+        height: 80px;
+        padding: 20px 20px;
+        
+    }
+
+    nav h2 {
+        color: #f85555;
+        padding: 14px 10px;
+        font-size: 40px;
+    }
+  
 }
